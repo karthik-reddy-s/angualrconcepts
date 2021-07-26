@@ -1,0 +1,17 @@
+<div class="row">
+    <!--parentpart-->
+    <div class="col-md-6">
+<div class="walk">
+<h1>parent</h1>
+ <input type="text" [(ngModel)]="ptoc" class="form-control"/>
+ {{ctop}}
+<br/>
+ <button class="btn btn-primary" (click)="sendData()">send data to sibling</button> 
+
+</div></div>
+<!--childpart-->
+<div class="col-md-6">
+    <div class="walk1">
+    <h1>child</h1>
+ <app-child [note]="ptoc" (userNameEmitter)="recievedata($event)" ></app-child> 
+</div></div></div>

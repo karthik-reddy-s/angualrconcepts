@@ -1,0 +1,47 @@
+<div>structural directive</div>
+<div>ngIf directive</div>
+<div *ngIf="isActive; else elseblock">
+    <h1>user is active</h1>
+    </div>
+    <ng-template #elseblock>
+        <h1 >inactive</h1>
+    </ng-template>
+    <br>
+    <div>ngFor directive</div>
+    <table class="table">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>place</th>
+    </tr>
+    <tr *ngFor="let student of students" [ngStyle]="{'background-color':getcolor(student.place)}">
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.place}}</td>
+    </tr>
+</table>
+<br>
+<br>
+<div>attribute directive</div>
+<div>ngStyle directive</div>
+<div [ngStyle]="{'color':'blue'}">
+    <h6>ngStyle directive</h6>
+</div>
+<br>
+<div>ngClass directive</div>
+
+<div [ngClass]="isSpecial ? 'special':'notsospecial'">
+    <h4>this is special</h4>
+</div>
+<br>
+<div>component directive</div>
+<p>creation of component can be 2 types manual or cli way</p>
+<br><br>
+<div> custom directive</div>
+<p>now no need difficult,(elementref-smallthingmanipualtion,templateref-entire thing,viewcontainerref-indivual items)</p>
+
+
+        
+
+    
+

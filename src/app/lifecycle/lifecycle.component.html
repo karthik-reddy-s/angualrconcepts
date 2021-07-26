@@ -1,0 +1,22 @@
+<div>
+    1.constructor-every class has it,firstexecutes,used for dependency injection<br>
+    2.ngonchanges-when there is a value of input control withina comp has been changed<br>
+    3.ngonInit-this first initializeswhen comp has been intialized,it will come after ngonchanges event<br>
+    4.ngdocheck-everytime the input properties of comp are checked.<br>
+    5.ngaftercontentinit-is executed when angular performs any content projection with component views.<br>
+    6.ngaftercontentchecked-everytime content of comp has been checked by change detection mechansim of angular<br>
+    7.ngafterviewinit-when the comp view has been fully initalized.<br>
+    8.ngafterviewchecked-everytime the view of given comp has been checked by change detection algo of angular<br>
+    9.ngondestroy-before destroy the component.<br>
+
+    order is constructor,ngonchanges,ngoninit,ngdocheck,ngaftercontentinit,ngafterviewinit
+    ngaftercontentchecked,ngafterviewinit,ngafterviewchecked.
+    later we get ngdocheck,ngaftercontentinit,ngafterviewinit.<br>
+
+    if we write or remove something we get,ngdocheck,ngaftercontentchecked,ngafterviewchecked.<br>
+</div>
+<br>
+<br>
+<div>check in console</div>
+<br><br>
+<input type="text" class="form-control" type="text" [(ngModel)]="username"/>

@@ -1,0 +1,32 @@
+<h3>routing process</h3>
+<p>using instead of href, no reloading of pages, 3steps</p>
+<div>
+    1.route-go to routingmodule, add a instruction in routes like
+    (use flower brackets for instructions)
+    path:"somename",component:componentsnametoberouted
+    if u want to the page to be default then give like
+    path:"",component:componentsnametoberouted,pathMatch="full"
+    also import above in approutingmodule the component
+    2. where u need the point of route instead of using href give 
+    routerLink='/somename';(same as given in path)
+    3.go to app.comp.html and given
+    router-outlet as a selector use as endtags like div
+</div>
+<br><br>
+<h3>pipes</h3>
+<h5>currency pipe</h5>
+{{12.34 | currency:"CAD"}}<br>
+{{12.34 | currency:"EUR"}}
+<h5>date pipe</h5>
+{{datevalue | date:"d/m/y"}}<br>
+<h5>decimal pipe</h5>
+{{9345.7868 | number:"1.2-2"}}<br>
+<h5>json pipe</h5>
+{{students | json}}
+<h5>lower and upper case</h5>
+{{"ANGULAR" | lowercase}}<br>
+{{"anguLar" | uppercase}}
+<h5>percent pipe</h5>
+{{0.3456 | percent}}
+<h5>slice pipe</h5>
+{{[1,2,3,4,5,6] | slice :1:3}}

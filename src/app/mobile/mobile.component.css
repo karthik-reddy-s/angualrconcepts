@@ -1,0 +1,34 @@
+.a1{
+    margin-left:200px;
+}
+.c1 {
+    border-radius: 30px;
+    background: #e9e9e4;
+    padding: 20px;
+    width: 330px;
+    height:350px;
+  }
+  .i1{
+    border-radius: 100px; 
+    
+  }
+  .a2{
+      margin-left:200px;
+      margin-top:30px;
+  }
+  .a3{
+      margin-left:200px;
+      margin-top:30px;
+  }
+  .a4{
+      margin-left:350px;
+      font-size:30px;
+      
+      color:grey;
+  }
+  .a5{
+      margin-left:350px;
+      color:red;
+      font-size:200px;
+      
+  }
